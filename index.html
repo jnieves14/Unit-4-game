@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <title>Crystal Collector Game!</title>
+    <link rel='stylesheet' type='text/css' href='assets/css/reset.css'>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Mountains+of+Christmas&display=swap" rel="stylesheet">
+    
+    <link rel='stylesheet' type='text/css' href='assets/css/style.css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="jumbotron">
+
+            <h1>Crystals Collector</h1>
+            <hr>
+        
+            <h3>How to Play</h3>
+            <h4><p>
+                You will be given a random number at the start of the game.
+                There are four crystals below. By clicking on a crystal, you will
+                add a specific amount of points to your total score.
+            </p>
+            <p>
+                Win the game by matching your total score to the random, target score. 
+                You lose the game if your total score goes above the target score.
+            </p>
+            <p>Determine the value of each crystal by clicking on it. Each time the game starts, the value of each crystal will change.
+            </p></h4>
+        </div>
+        
+           
+        <div class="row" id="content">
+            <div class="col-xs-3" id="targetScore">
+                <h3 id="random">Target Score: </h3><hr>
+                <h1 class="numberBox" id="randomDisp">150</h1>
+            </div>
+
+            <div class="col-xs-6" id="crystalBtn">
+                <button id="button-1" value="0"><img src="assets/images/red-crystal.gif" class="img-responsive" id="btn1" width="100" height="100"></button>
+                <button id="button-2" value="0"><img src="assets/images/blue-crystal.gif" class="img-responsive" id="btn2" width="100" height="100"></button>
+                <button id="button-3" value="0"><img src="assets/images/yellow-crystal.gif" class="img-responsive" id="btn3" width="100" height="100"></button>
+                <button id="button-4" value="0"><img src="assets/images/green-crystal.gif" class="img-responsive" id="btn4" width="100" height="100"></button>
+            </div>
+
+            <div class="col-xs-3" id="yourScore">
+                <h3 id="yourScore">Your Total Score: </h3><hr>
+                <h1 class="numberBox" id="totalScore">0</h1>
+            </div>
+        </div>
+
+
+        <div class="row" id="scoreBoard">
+            <div class="col-xs-4"></div>
+            <div class="col-xs-2" id="winsTracker">
+                <h3 id="wins">Wins: 0</h3>
+            </div>
+
+            <div class="col-xs-2" id="lossesTracker">
+                <h3 id="losses">Losses: 0</h3> 
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+</html>
