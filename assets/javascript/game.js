@@ -43,7 +43,6 @@ function pickRandomCrystals(arr) {
 function crystalValues(arr) {
     for (var i = 0; i < arr.length; i++) {
         $("#button-" + (i+1)).attr("value", arr[i]);
-        console.log(crystalValues);
     }
     c1 = arr[0];
     c2 = arr[1];
@@ -52,7 +51,7 @@ function crystalValues(arr) {
 }
 
 function gameReset(x) {
-    crystalNumbers = [];
+    crystalAssign = [];
     pickRandomNumber(random);
     pickRandomCrystals(crystals);
     crystalValues(crystalAssign);
@@ -97,7 +96,7 @@ $("button").on("click", function() {
 
     else if (userScore > randomNumber) {
         losses++;
-        console.log(userScore);
+        console.log("User Score: " + userScore);
         $("#totalScore").html(userScore);
         $("#losses").html("Losses: " + losses);
 

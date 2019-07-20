@@ -1,0 +1,62 @@
+body {
+    font-family: 'Anton', sans-serif;
+    /* background: url("../images/dBackground2.jpg"); */
+    background: url("../images/CrystalCave.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.jumbotron,
+#targetScore,
+#yourScore,
+#winsTracker,
+#lossesTracker {
+    background:#FAF0E6;
+    opacity: 0.9;
+    border: 1px solid #5F9EA0;
+}
+
+.jumbotron {
+    padding: 0px;
+    margin: 50px 50px 50px 70px;
+    width: 90%;
+}
+
+#targetScore,
+#yourScore {
+    font-size: 30px;
+    height: 250px;
+}
+
+
+.numberBox {
+    font-size: 90px;
+    margin: 0px;
+}
+
+#crystalBtn {
+    padding: 0px;
+    margin: 0px 0px 20px 0px;
+	
+}
+
+button {
+    width:  150px;
+    height: 250px;
+    background:#FAF0E6;
+    margin: 0px;
+    border: 1px solid #5F9EA0;
+}
+
+#wins,
+#losses {
+    font-size: 30px;
+    padding: 10px;
+}
+
+
+
+
+
+
